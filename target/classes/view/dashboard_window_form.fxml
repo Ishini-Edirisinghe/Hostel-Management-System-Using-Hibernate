@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainRoot" minHeight="769.0" minWidth="1366.0" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hostelManagement.controller.DashboardWindowFormController">
+   <children>
+      <ImageView fitHeight="784.0" fitWidth="1374.0" layoutX="-7.0" layoutY="-13.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../img/background.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="228.0" layoutY="89.0" prefHeight="587.0" prefWidth="1083.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <children>
+            <AnchorPane fx:id="root" layoutX="1.0" layoutY="1.0" prefHeight="587.0" prefWidth="1089.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+               <children>
+                  <Label layoutX="446.0" layoutY="237.0" text="Hostel Management">
+                     <font>
+                        <Font name="Segoe Print" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTime" layoutX="411.0" layoutY="391.0" prefHeight="81.0" prefWidth="430.0" text="00:00">
+                     <font>
+                        <Font size="55.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDate" layoutX="469.0" layoutY="465.0" prefHeight="81.0" prefWidth="315.0" text="DD:MM:YYYY">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="24.0" layoutY="84.0" prefHeight="587.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="27.0" layoutY="41.0" onAction="#btnStudentOnAction" prefHeight="57.0" prefWidth="90.0" style="-fx-background-color: #ECF2FF;">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="82.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/student.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="27.0" layoutY="152.0" onAction="#btnRoomOnAction" style="-fx-background-color: #ECF2FF;">
+               <graphic>
+                  <ImageView fitHeight="66.0" fitWidth="90.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/room.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="35.0" layoutY="270.0" onAction="#btnResavationOnAction" style="-fx-background-color: #ECF2FF;">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="82.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/reservation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="40.0" layoutY="385.0" onAction="#btnUserOnAction" style="-fx-background-color: #ECF2FF;">
+               <graphic>
+                  <ImageView fitHeight="61.0" fitWidth="74.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" focusTraversable="false" layoutX="42.0" layoutY="498.0" onAction="#btnLogoutOnAction" style="-fx-background-color: #ECF2FF;">
+               <graphic>
+                  <ImageView fitHeight="51.0" fitWidth="69.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../img/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1045.0" layoutY="14.0" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <children>
+            <Label fx:id="lblDateTop" layoutX="11.0" layoutY="5.0" prefHeight="32.0" prefWidth="170.0" text="DD:MM:YYYY">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutX="823.0" layoutY="14.0" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <children>
+            <Label fx:id="lblTimeTop" layoutX="21.0" layoutY="3.0" prefHeight="32.0" prefWidth="154.0" text="00:00">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

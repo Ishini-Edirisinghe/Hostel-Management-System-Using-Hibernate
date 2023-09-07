@@ -8,43 +8,42 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hostelManagement.entity.Student;
 
+    public class FactoryConfiguration {
+        //Used singleton design pattern
+        private static FactoryConfiguration factoryConfiguration;
+        private SessionFactory sessionFactory;
 
-public class FactoryConfiguration {
-    //Used singleton design pattern
-    private static FactoryConfiguration factoryConfiguration;
-    private SessionFactory sessionFactory;
+        private FactoryConfiguration(){
 
-    private FactoryConfiguration(){
+            // Creating the Hibernate StandardServiceRegistryBuilder
+            StandardServiceRegistryBuilder standardServiceRegistryBuilder = new StandardServiceRegistryBuilder();
 
-        // Creating the Hibernate StandardServiceRegistryBuilder
-        StandardServiceRegistryBuilder standardServiceRegistryBuilder = new StandardServiceRegistryBuilder();
+            //load properties file
+            standardServiceRegistryBuilder.loadProperties("hibernate.properties");
 
-        //load properties file
-        standardServiceRegistryBuilder.loadProperties("hibernate.properties");
+            // Creating MetadataSources to define metadata for the annotated classes
+            MetadataSources metadataSources = new MetadataSources(standardServiceRegistryBuilder.build());
 
-        // Creating MetadataSources to define metadata for the annotated classes
-        MetadataSources metadataSources = new MetadataSources(standardServiceRegistryBuilder.build());
-
-        // Adding annotated classes to the metadataSources
-        metadataSources
-                .addAnnotatedClass(Student.class);
+            // Adding annotated classes to the metadataSources
+            metadataSources
+                    .addAnnotatedClass(Student.class);
                /*addAnnotatedClass(Room.class).
                 addAnnotatedClass(Reservation.class).
                 addAnnotatedClass(User.class);*/
 
-        // Building Metadata from the MetadataSources
-        Metadata metadata = metadataSources.getMetadataBuilder().build();
+            // Building Metadata from the MetadataSources
+            Metadata metadata = metadataSources.getMetadataBuilder().build();
 
-        // Building the SessionFactory from the Metadata
-        sessionFactory =  metadata.getSessionFactoryBuilder().build();
-    }
+            // Building the SessionFactory from the Metadata
+            sessionFactory =  metadata.getSessionFactoryBuilder().build();
+        }
 
-    public static FactoryConfiguration getInstance(){ //get factory configuration instance
-        return (factoryConfiguration==null)?
-                factoryConfiguration=new FactoryConfiguration(): factoryConfiguration;
-    }
+        public static FactoryConfiguration getInstance(){ //get factory configuration instance
+            return (factoryConfiguration==null)?
+                    factoryConfiguration=new FactoryConfiguration(): factoryConfiguration;
+        }
 
-    public Session getSession(){ //get one session
-        return sessionFactory.openSession();
+        public Session getSession(){ //get one session
+            return sessionFactory.openSession();
+        }
     }
-}
