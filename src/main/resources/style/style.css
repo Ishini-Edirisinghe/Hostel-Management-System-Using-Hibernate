@@ -1,19 +1,14 @@
-.btnLogin{
+.button_login{
+    -fx-background-color: linear-gradient(to right, #09076c 0%, #9e0368 100%);
+}
+.button_register{
+    -fx-background-color: linear-gradient(to right, #008011 0%, #9e0368 100%);
+}
 
-    -fx-background-color:  #30336b;
+.txt_border{
+    -fx-border-color:linear-gradient(to right, #09076c 0%, #9e0368 100%); ;
+}
+.font{
 
-    -fx-background-radius: 10;
-
-    -fx-min-width: 90px;
-
-    -fx-min-height: 40px;
-
-    -fx-max-width: 90px;
-
-    -fx-max-height: 40px;
-
-    -fx-text-fill: white;
-
-    -fx-font-weight: bold;
-
+    font-family: "Sofia", sans-serif;
 }
