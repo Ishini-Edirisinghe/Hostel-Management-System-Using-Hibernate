@@ -2,7 +2,6 @@ package org.hostelManagement;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import org.hostelManagement.entity.Student;
 import org.hostelManagement.util.FactoryConfiguration;
 public class Main {
 

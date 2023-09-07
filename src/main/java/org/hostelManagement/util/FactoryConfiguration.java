@@ -4,11 +4,9 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hostelManagement.entity.Student;
 
-    public class FactoryConfiguration {
+public class FactoryConfiguration {
         //Used singleton design pattern
         private static FactoryConfiguration factoryConfiguration;
         private SessionFactory sessionFactory;

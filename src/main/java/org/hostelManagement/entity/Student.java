@@ -1,31 +1,32 @@
 package org.hostelManagement.entity;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name = "student")
-
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Student {
+
     @Id
-    private String studentID;
+    private String student_id;
+    private String name;
+    private String address;
+    private String contact;
+    private String gender;
+    private Date dob;
 
-    private String studentName;
-
-    private String studentAddress;
-
-    private String studentContact;
-
-    private String studentDOB;
-
-    private String studentGender;
+    @OneToMany(targetEntity = entity.Reservation.class, mappedBy = "student", cascade = CascadeType.ALL)
+    private List<entity.Reservation> reservationList = new ArrayList<>();
 
 }
