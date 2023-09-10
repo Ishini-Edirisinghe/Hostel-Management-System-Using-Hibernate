@@ -1,13 +1,8 @@
 package org.hostelManagement.controller;
 
-import bo.BOFactory;
-import bo.custom.ReservationBO;
-import bo.custom.RoomBO;
+
 import com.jfoenix.controls.JFXButton;
-import dto.ReservationDTO;
-import dto.RoomDTO;
-import dto.tm.ReservationTM;
-import dto.tm.RoomTM;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -24,6 +19,13 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import org.hostelManagement.bo.BOFactory;
+import org.hostelManagement.bo.custom.ReservationBO;
+import org.hostelManagement.bo.custom.RoomBO;
+import org.hostelManagement.dto.ReservationDTO;
+import org.hostelManagement.dto.RoomDTO;
+import org.hostelManagement.dto.tm.ReservationTM;
+import org.hostelManagement.dto.tm.RoomTM;
 
 import java.io.IOException;
 import java.net.URL;

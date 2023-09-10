@@ -1,7 +1,8 @@
 package org.hostelManagement.dao.custom;
 
-import dao.CrudDAO;
-import entity.Student;
+
+import org.hostelManagement.dao.CrudDAO;
+import org.hostelManagement.entity.Student;
 
 import java.util.List;
 

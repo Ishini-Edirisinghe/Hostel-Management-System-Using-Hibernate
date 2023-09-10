@@ -1,9 +1,6 @@
 package org.hostelManagement.controller;
 
-import bo.BOFactory;
-import bo.custom.StudentBO;
-import dto.StudentDTO;
-import dto.tm.UnpaidStudentTM;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -16,6 +13,10 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import org.hostelManagement.bo.BOFactory;
+import org.hostelManagement.bo.custom.StudentBO;
+import org.hostelManagement.dto.StudentDTO;
+import org.hostelManagement.dto.tm.UnpaidStudentTM;
 
 import java.io.IOException;
 import java.net.URL;

@@ -1,9 +1,10 @@
 package org.hostelManagement.bo;
 
-import bo.custom.impl.ReservationBoImpl;
-import bo.custom.impl.RoomBOImpl;
-import bo.custom.impl.StudentBOImpl;
-import bo.custom.impl.UserBOImpl;
+
+import org.hostelManagement.bo.custom.impl.ReservationBoImpl;
+import org.hostelManagement.bo.custom.impl.RoomBOImpl;
+import org.hostelManagement.bo.custom.impl.StudentBOImpl;
+import org.hostelManagement.bo.custom.impl.UserBOImpl;
 
 public class BOFactory {
 
@@ -22,7 +23,7 @@ public class BOFactory {
 
     }
 
-    public bo.SuperBO getBO(BOTypes boTypes) {
+    public SuperBO getBO(BOTypes boTypes) {
 
         switch (boTypes) {
 

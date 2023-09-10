@@ -1,6 +1,7 @@
 package org.hostelManagement.bo.custom;
 
-import bo.SuperBO;
+
+import org.hostelManagement.bo.SuperBO;
 
 import java.util.List;
 

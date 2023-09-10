@@ -1,10 +1,10 @@
 package org.hostelManagement.bo.custom.impl;
 
-import bo.custom.RoomBO;
-import dao.DAOFactory;
-import dao.custom.RoomDAO;
-import dto.RoomDTO;
-import entity.Room;
+import org.hostelManagement.bo.custom.RoomBO;
+import org.hostelManagement.dao.DAOFactory;
+import org.hostelManagement.dao.custom.RoomDAO;
+import org.hostelManagement.dto.RoomDTO;
+import org.hostelManagement.entity.Room;
 
 import java.util.ArrayList;
 import java.util.List;

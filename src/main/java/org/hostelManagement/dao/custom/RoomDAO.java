@@ -1,7 +1,8 @@
 package org.hostelManagement.dao.custom;
 
-import dao.CrudDAO;
-import entity.Room;
+
+import org.hostelManagement.dao.CrudDAO;
+import org.hostelManagement.entity.Room;
 
 public interface RoomDAO extends CrudDAO<Room> {
 }

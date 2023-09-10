@@ -1,11 +1,12 @@
 package org.hostelManagement.dao;
 
-import dao.custom.impl.ReservationDAOImpl;
-import dao.custom.impl.RoomDAOImpl;
-import dao.custom.impl.StudentDAOImpl;
-import dao.custom.impl.UserDAOImpl;
 
-public class DAOFactory implements dao.SuperDAO {
+import org.hostelManagement.dao.custom.impl.ReservationDAOImpl;
+import org.hostelManagement.dao.custom.impl.RoomDAOImpl;
+import org.hostelManagement.dao.custom.impl.StudentDAOImpl;
+import org.hostelManagement.dao.custom.impl.UserDAOImpl;
+
+public class DAOFactory implements SuperDAO {
 
     private static DAOFactory daoFactory;
 
@@ -20,7 +21,7 @@ public class DAOFactory implements dao.SuperDAO {
         USER, STUDENT, ROOM, RESERVATION
     }
 
-    public dao.SuperDAO getDAO(DAOTypes daoTypes) {
+    public SuperDAO getDAO(DAOTypes daoTypes) {
 
         switch (daoTypes) {
 

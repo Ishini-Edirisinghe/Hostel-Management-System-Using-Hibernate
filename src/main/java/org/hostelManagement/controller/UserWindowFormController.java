@@ -1,10 +1,7 @@
 package org.hostelManagement.controller;
 
-import bo.BOFactory;
-import bo.custom.UserBO;
 import com.jfoenix.controls.JFXButton;
-import dto.UserDTO;
-import dto.tm.UserTM;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -23,6 +20,10 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import org.hostelManagement.bo.BOFactory;
+import org.hostelManagement.bo.custom.UserBO;
+import org.hostelManagement.dto.UserDTO;
+import org.hostelManagement.dto.tm.UserTM;
 
 import java.io.IOException;
 import java.net.URL;

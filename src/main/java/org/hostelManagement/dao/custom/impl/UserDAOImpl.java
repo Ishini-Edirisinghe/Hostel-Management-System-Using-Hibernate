@@ -1,14 +1,12 @@
 package org.hostelManagement.dao.custom.impl;
 
-import dao.custom.UserDAO;
-import entity.User;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
 import org.hostelManagement.dao.custom.UserDAO;
 import org.hostelManagement.entity.User;
 import org.hostelManagement.util.FactoryConfiguration;
-import util.FactoryConfiguration;
+
 
 import java.util.List;
 

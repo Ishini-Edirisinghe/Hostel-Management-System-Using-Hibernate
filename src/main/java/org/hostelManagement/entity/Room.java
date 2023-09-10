@@ -23,6 +23,6 @@ public class Room {
     private Double key_money;
     private Integer qty;
 
-    @OneToMany(mappedBy = "room", targetEntity = entity.Reservation.class)
-    List<entity.Reservation> reservationList = new ArrayList<>();
+    @OneToMany(mappedBy = "room", targetEntity = Reservation.class)
+    List<Reservation> reservationList = new ArrayList<>();
 }

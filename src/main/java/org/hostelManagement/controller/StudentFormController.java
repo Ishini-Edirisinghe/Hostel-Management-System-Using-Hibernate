@@ -1,10 +1,7 @@
 package org.hostelManagement.controller;
 
-import bo.BOFactory;
-import bo.custom.StudentBO;
 import com.jfoenix.controls.JFXButton;
-import dto.StudentDTO;
-import dto.tm.StudentTM;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -14,8 +11,13 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import util.regex.RegExFactory;
-import util.regex.RegExType;
+import org.hostelManagement.bo.BOFactory;
+import org.hostelManagement.bo.custom.StudentBO;
+import org.hostelManagement.dto.StudentDTO;
+import org.hostelManagement.dto.tm.StudentTM;
+import org.hostelManagement.util.regex.RegExFactory;
+import org.hostelManagement.util.regex.RegExType;
+
 
 import java.net.URL;
 import java.sql.Date;

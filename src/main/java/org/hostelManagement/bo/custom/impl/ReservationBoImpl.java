@@ -1,14 +1,14 @@
 package org.hostelManagement.bo.custom.impl;
 
-import bo.custom.ReservationBO;
-import dao.DAOFactory;
-import dao.custom.ReservationDAO;
-import dto.ReservationDTO;
-import dto.RoomDTO;
-import dto.StudentDTO;
-import entity.Reservation;
-import entity.Room;
-import entity.Student;
+import org.hostelManagement.bo.custom.ReservationBO;
+import org.hostelManagement.dao.DAOFactory;
+import org.hostelManagement.dao.custom.ReservationDAO;
+import org.hostelManagement.dto.ReservationDTO;
+import org.hostelManagement.dto.RoomDTO;
+import org.hostelManagement.dto.StudentDTO;
+import org.hostelManagement.entity.Reservation;
+import org.hostelManagement.entity.Room;
+import org.hostelManagement.entity.Student;
 
 import java.util.ArrayList;
 import java.util.List;

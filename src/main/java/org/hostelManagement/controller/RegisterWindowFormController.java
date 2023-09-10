@@ -1,17 +1,19 @@
 package org.hostelManagement.controller;
 
-import bo.BOFactory;
-import bo.custom.UserBO;
 import com.jfoenix.controls.JFXButton;
-import dto.UserDTO;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import util.regex.RegExFactory;
-import util.regex.RegExType;
+import org.hostelManagement.bo.BOFactory;
+import org.hostelManagement.bo.custom.UserBO;
+import org.hostelManagement.dto.UserDTO;
+import org.hostelManagement.util.regex.RegExFactory;
+import org.hostelManagement.util.regex.RegExType;
+
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -38,7 +40,8 @@ public class RegisterWindowFormController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        regExFactory = RegExFactory.getInstance();
+        regExFactory = RegExFactory
+                .getInstance();
     }
 
     @FXML

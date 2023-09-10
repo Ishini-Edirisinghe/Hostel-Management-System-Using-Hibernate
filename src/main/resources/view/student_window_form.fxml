@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pane" prefHeight="706.0" prefWidth="1170.0" style="-fx-background-radius: 40;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentFormController">
+<AnchorPane fx:id="pane" prefHeight="706.0" prefWidth="1170.0" style="-fx-background-radius: 40; -fx-background-color: linear-gradient(to right, #200122, #6f0000);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentFormController">
    <children>
       <TableView fx:id="tblStudents" layoutX="61.0" layoutY="119.0" onMouseClicked="#tblStudentOnMouseClicked" prefHeight="317.0" prefWidth="965.0">
          <columns>

@@ -17,5 +17,5 @@ public class RoomDTO {
     private String type;
     private Double key_money;
     private Integer qty;
-    List<dto.ReservationDTO> reservationList = new ArrayList<>();
+    List<ReservationDTO> reservationList = new ArrayList<>();
 }

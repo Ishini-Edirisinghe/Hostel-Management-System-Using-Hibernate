@@ -1,7 +1,8 @@
 package org.hostelManagement.dao.custom;
 
-import dao.CrudDAO;
-import entity.User;
+
+import org.hostelManagement.dao.CrudDAO;
+import org.hostelManagement.entity.User;
 
 public interface UserDAO extends CrudDAO<User> {
 

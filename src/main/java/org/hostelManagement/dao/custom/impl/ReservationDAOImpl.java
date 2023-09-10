@@ -1,12 +1,13 @@
 package org.hostelManagement.dao.custom.impl;
 
-import dao.custom.ReservationDAO;
-import entity.Reservation;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
 import org.hibernate.query.Query;
-import util.FactoryConfiguration;
+import org.hostelManagement.dao.custom.ReservationDAO;
+import org.hostelManagement.entity.Reservation;
+import org.hostelManagement.util.FactoryConfiguration;
+
 
 import java.util.List;
 

@@ -8,14 +8,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="706.0" prefWidth="1170.0" style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservationWindowFormController">
+<AnchorPane fx:id="root" prefHeight="729.0" prefWidth="1318.0" style="-fx-background-radius: 20; -fx-background-color: linear-gradient(to right, #200122, #6f0000);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservationWindowFormController">
     <children>
         <Label layoutX="59.0" layoutY="14.0" text="Manage Reservations" textFill="#112d4e">
             <font>
                 <Font size="43.0" />
             </font>
         </Label>
-        <TableView fx:id="tblReservations" layoutX="74.0" layoutY="122.0" onMouseClicked="#tblReservationsOnMouseClicked" prefHeight="289.0" prefWidth="1023.0">
+        <TableView fx:id="tblReservations" layoutX="74.0" layoutY="122.0" onMouseClicked="#tblReservationsOnMouseClicked" prefHeight="215.0" prefWidth="1144.0">
             <columns>
                 <TableColumn fx:id="colReservationId" prefWidth="137.99996948242188" text="Reservation ID" />
                 <TableColumn fx:id="colStudentId" prefWidth="237.0" text="Student ID" />
@@ -24,7 +24,7 @@
                 <TableColumn fx:id="colStatus" prefWidth="188.0" text="Status" />
             </columns>
         </TableView>
-        <TableView fx:id="tblRoom" layoutX="74.0" layoutY="466.0" prefHeight="234.0" prefWidth="1023.0">
+        <TableView fx:id="tblRoom" layoutX="74.0" layoutY="424.0" prefHeight="192.0" prefWidth="1151.0">
             <columns>
                 <TableColumn fx:id="colRoomID" prefWidth="253.0" text="Room ID" />
                 <TableColumn fx:id="colType" prefWidth="409.0" text="Type" />
@@ -47,7 +47,7 @@
                 </JFXButton>
             </buttons>
         </ButtonBar>
-        <ButtonBar layoutX="74.0" layoutY="418.0" prefHeight="40.0" prefWidth="1023.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+        <ButtonBar layoutX="75.0" layoutY="370.0" prefHeight="40.0" prefWidth="1059.0" style="-fx-background-color: white; -fx-background-radius: 5;">
             <buttons>
                 <JFXButton fx:id="btnMarkAsPaid" buttonType="RAISED" onAction="#btnMarkAsPaidOnAction" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: lightblue;" text="Mark as paid">
                     <font>

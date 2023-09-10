@@ -1,7 +1,8 @@
 package org.hostelManagement.dao.custom;
 
-import dao.CrudDAO;
-import entity.Reservation;
+
+import org.hostelManagement.dao.CrudDAO;
+import org.hostelManagement.entity.Reservation;
 
 public interface ReservationDAO extends CrudDAO<Reservation> {
 }
